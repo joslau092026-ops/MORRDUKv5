@@ -1,0 +1,35 @@
+MORDUK v0.20.0 — Paquete completo (solo falta instalar el cerebro)
+====================================================================
+
+CONTENIDO (todo incluido)
+- Núcleo M.O.R.D.U.K. 3D con voz de Escanor (despierta solo al abrir)
+- Cerebro local: 71+ comandos de voz, memoria persistente, temporizadores,
+  poderes del PC, doctor del Gateway, personalidad motivadora
+- node_modules incluido: la app Electron funciona sin instalar nada
+- Lanzadores: iniciar-morduk.cmd (voz con Chrome) y app Electron (Ctrl+Alt+M)
+
+PARA EJECUTAR (requiere solo Node.js)
+  Doble clic a iniciar-morduk.cmd
+  → abre Chrome con micrófono ya permitido y MORDUK despierta hablando.
+
+INSTALAR EL CEREBRO (lo único que falta) — Qwen3.8-27B vía LM Studio
+  1. Instala LM Studio: https://lmstudio.ai
+  2. Descarga el modelo (16.8 GB):
+     lmstudio-community/Qwen3.8-27B-GGUF → Qwen3.8-27B-Q4_K_M.gguf
+     URL directa:
+     https://huggingface.co/lmstudio-community/Qwen3.8-27B-GGUF/resolve/main/Qwen3.8-27B-Q4_K_M.gguf
+  3. En LM Studio: Load (cargar el modelo) → Developer → Start Server (puerto 1234)
+  4. Recarga el núcleo: MORDUK lo detecta solo.
+     → Respuestas inteligentes con streaming, tu memoria como contexto
+       y la voz de Escanor narrando.
+
+SEGURIDAD
+- data/fishaudio.json contiene tu API key de Fish Audio (voz Escanor gratis).
+- data/morduk-memory.json contiene la memoria de tu asistente.
+  NO compartas este zip si no quieres compartir esas dos cosas.
+
+NOTAS
+- Sin cerebro instalado, MORDUK funciona igual con sus 71+ comandos locales
+  (hora, música, capturas, batería, IP, temporizadores, memoria, poderes del PC).
+- La voz de Escanor usa el modelo gratuito s2.1-pro-free de Fish Audio
+  (no consume créditos). Requiere internet para sintetizar frases nuevas.

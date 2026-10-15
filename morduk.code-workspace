@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "on",
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.powershell"
+    ]
+  }
+}
